@@ -4,13 +4,13 @@
 **Supervised by:** Prof. Steve Mann  
 **Author:** João Pedro Bicalho 
 
-## 📋 Overview
+## Overview
 
 This repository contains a comprehensive implementation of the **Adaptive Chirplet Transform (ACT)** for EEG signal analysis and automatic sleep stage classification. The project explores the application of time-frequency-chirp rate analysis to extract meaningful features from EEG signals for sleep staging tasks.
 
 The implementation includes both CPU and GPU-accelerated versions of the ACT algorithm, along with deep learning models for sleep stage classification.
 
-## 🧠 What is the Adaptive Chirplet Transform?
+## What is the Adaptive Chirplet Transform?
 
 The Adaptive Chirplet Transform is an advanced signal processing technique that decomposes signals into time-frequency-chirp rate atoms called "chirplets." Unlike traditional time-frequency representations, ACT captures both the instantaneous frequency and the rate of frequency change (chirp rate) of signal components, making it particularly suitable for analyzing non-stationary signals like EEG.
 
@@ -20,7 +20,7 @@ The Adaptive Chirplet Transform is an advanced signal processing technique that 
 - Sparse representation of complex signals
 - Robust feature extraction for machine learning applications
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 📦 ACT-Thesis/
@@ -41,7 +41,7 @@ The Adaptive Chirplet Transform is an advanced signal processing technique that 
 └── README.md                       # This file
 ```
 
-## 🔧 Implementation Details
+## Implementation Details
 
 ### Core ACT Algorithm (`CPU-Implementation/` & `GPU-Implementation/`)
 
@@ -89,7 +89,7 @@ The Adaptive Chirplet Transform is an advanced signal processing technique that 
 #### **input_transform.py** - Model Integration
 - **Feature Transformation**: Converts ACT features for compatibility with existing models, not used for the final NN model and final results.
 
-## 🛠️ Installation and Dependencies
+## Installation and Dependencies
 
 ### Required Packages
 
@@ -133,7 +133,7 @@ pip install numpy scipy pandas matplotlib mne torch scikit-learn tqdm joblib
 pip install cupy-cuda11x  # Adjust CUDA version as needed
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Basic EEG Processing
 
@@ -163,13 +163,13 @@ python split_for_training.py  # Prepare data splits
 python nn.py                 # Train classification model
 ```
 
-## 🔬 Research Contributions
+## Research Contributions
 
 1. **Novel Application**: First comprehensive application of ACT to sleep EEG analysis
 2. **GPU Implementation**: High-performance computing solution for real-time processing
 3. **Feature Engineering**: ACT-based features capture sleep-specific signal characteristics
 
-## 📚 References
+## References
 
 1. Mann, S., & Haykin, S. (1995). The chirplet transform: Physical considerations. *IEEE Transactions on Signal Processing*, 43(11), 2745-2761.
 2. BitBrain Sleep Dataset: https://github.com/OpenNeuroDatasets/ds005555
