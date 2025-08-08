@@ -1,8 +1,7 @@
 # Adaptive Chirplet Transform for EEG Sleep Stage Classification
 
-**Undergraduate Thesis Project**  
+**Undergraduate Thesis **  
 **Supervised by:** Prof. Steve Mann  
-**Author:** João Pedro Bicalho 
 
 ## Overview
 
